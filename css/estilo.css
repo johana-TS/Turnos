@@ -1,0 +1,378 @@
+
+/* gama de coloresdel mas oscuro al mas claro
+#19456B azul oscuro
+#11698E azul claro
+#16C79A verde
+#F8F1F1 claro camel
+ */
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100%;
+    height: 70px;
+    background-color: #F8F1F1;
+}
+.contenedor {
+    background-color: #F8F1F1;
+    clear: both;
+    content: '';
+    width: 90%;
+    height: 70px;
+    margin: auto;
+    
+}
+.logotipo {
+   
+    float: left;
+    width: 30%;
+    height: 70px;
+    background-color: #19456B;
+    padding: auto;
+    box-sizing: border-box; 
+}
+.logotipo a p {
+    font-family: 'Rock Salt', cursive;
+    color: #F8F1F1;
+    text-align: center;
+    font-size: 20px;
+    /* margin-left: 15px; */
+    width: 80%;
+    margin: auto;
+}
+
+ .navegador{
+    float: right;
+    width: 70%;
+    height: 70px;
+    text-transform: uppercase;
+    background-color: #F8F1F1;
+    list-style: none;
+    padding: 15px;
+    text-align: right;
+}
+.navegador ul li{
+    display:inline;
+    font-weight: bold;
+    float: right;
+    margin-right: 40px;
+    padding-top: 10px;
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+   
+}
+.navegador ul li a{
+    text-decoration: none;
+    color: #19456B;
+}
+.navegador ul li a:hover{
+    color: #16C79A; /*<!--tengo que ponerle el key animatio y que dibuje la linea-->*/
+}
+/* .disponibilidad{ ocultar li
+    display: none;
+} */
+
+@media (max-width:900px) {
+    .contenedor{
+        height:auto;
+        width: 100%;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+    }
+    .logotipo{
+        display: inline-block;
+        height: auto;
+        width: 100%;
+        /* margin: auto;
+        justify-content: center ; */
+    }
+    .logotipo a p {
+        font-size: 25px;
+    }
+    .navegador {
+        height: auto;
+        margin: auto;
+        text-align: center;
+        display: inline-block;
+        flex-direction: column;
+        width: 100%;
+        border: 1 solid #19456B;
+    }
+    
+    .navegador ul li  {
+        padding: 3px;
+        display: inline-flex;
+        justify-content: center;
+        /* align-items: center; */
+        width: 100%;
+        margin: auto;
+        font-size: 15px;
+        border-bottom: 2px solid #19456B ;
+    }
+    .navegador ul li a:hover {
+        background-color: #16C79A;
+        color: #F8F1F1;
+    }
+   
+    
+}  
+.contenedorform{
+    width: 100%;
+    height: auto;
+    margin-top: 140px;
+    display: flex; 
+}
+
+.formulariolog{
+    margin-top: 4px;
+    padding: 3px;
+    border:2px solid #19456B ;
+    background-color: white;
+    margin: auto;
+}
+.cajaregistro{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+}
+.formulariolog h1 {
+    text-align-last: center;
+    font-size: 30px;
+    color: #213e3b;
+}
+input[type="text"], input[type="password"] {
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+input[type="date"] {
+    font-size: 15px;
+    float: right;
+    margin-right: 5px;
+    border: none;
+    padding: 0;
+}
+.registrosubcaja{
+    margin-bottom: 10px;
+    border: 1px solid #19456B ;
+    padding: 4.5px; 
+    font-size: 18px;
+}
+.registrogenero{
+    margin: 15px 45px 15px;
+    font-size: 18px;
+    padding: auto;
+}
+.icon{
+    float: left;
+    width: 5%;
+    text-align: center;   
+    padding-top: 25px; 
+}
+.btn1{
+    border: none;
+    width: 100%;
+    font-size: 20px;
+    color: white;
+    background:#19456B;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.btn1:hover{
+    background: #5588A3;
+}
+.parrafo{
+    text-align: center;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+@media(min-width:768px){
+    .formulariolog{
+        margin: auto; 
+        width: 500px;
+         margin-top: 45px;
+        border-radius: 2%;
+       
+    } 
+    /* .contenedorform{
+        /* width: 100%;
+        height: 150px;
+        width: 90%; */
+    /*width: 100%;
+    height: auto;
+    margin-top: 100px;
+    } */
+}
+
+.cuerpo-1{
+         
+    margin:30px;
+    position:absolute; 
+    display: flex;
+    flex-direction: column;
+}
+.cuerpo-1 h2 {
+    text-align: right;
+    
+    flex-direction: row;
+}
+.cuerpo-1 p{
+    text-align: center;
+    margin: auto;
+    flex-direction: row;
+}
+/* @media (max-width:900px) {
+    .cuerpo-1{
+        height:auto;
+        width: 100%;
+        
+        flex-direction: column;
+        margin-top:75px ;
+        
+        
+    }
+} */
+
+/* .seccionnovedades{     seccion de novedades css
+    display:flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+       
+}
+.seccionderecha, .seccionizquierda{
+    text-align: center;
+    padding: 10px 0;
+    flex: 50%;
+} */
+
+.visor{
+    width: 90%;
+    margin: auto;
+   
+}
+
+.mainConteiner{
+    margin:auto;
+    height: auto;
+    width: 90%;    
+    /* display: flex;
+    flex-flow:column;  */
+    display:flex;
+    justify-content:center !important;  
+    
+}
+.divContainer{    
+    padding: 5px;          
+    justify-content: center ;
+    margin: auto;
+    
+}
+.divContainer button{
+    margin: 50px;
+    width: 30%!important;
+  
+ }
+.divContainer input{
+    border: solid;
+    border-color: #19456B;
+    border-radius: 5px;
+}
+.solicitar{
+    margin:auto;
+    height: auto;
+    width: 100%;
+    display: none;
+} 
+.solicitar label {
+    color: #19456B;
+    font-size: 20px;
+    font-weight: bolder;
+
+}
+.solicitar input {
+    border-color: #19456B;
+    border-style: ridge;
+    border-radius: 5px;
+    margin: 10px;    
+    cursor: pointer;
+}
+#solicitarDNI{
+    margin: 5px 5px;   
+    display: flex;
+    flex-flow:row nowrap;
+}
+
+
+.asistir{
+    margin:auto;
+    height: auto;
+    width: 90%;
+    display: none;
+}
+.solicitarDetalle{
+    margin: 15px;
+    padding: 5px;    
+    display: flex;
+    flex-flow:row nowrap;
+   
+}
+.especialidades, .medicosNames, .os {
+    margin: 15px;
+    cursor: pointer;
+}
+.calendarioDisponibles{
+    border-color: #19456B;
+    border-style: ridge;
+    border-radius: 5px;
+    width: 45%;
+    height:max-content;
+    margin: 10px 10px;
+    text-align: center;
+    cursor: pointer;
+}
+ .imgConfirm{
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    font-size: 75px!important;
+    color: #19456B;
+    margin: 15px 10px;
+} 
+.btnConfirm{
+    width: 50%;
+    background-color:  #19456B;
+    margin: 10px;
+    border-radius: 5px;
+
+}
+.iconos{
+    margin: 10px 30;
+    padding: 5px;    
+    display: flex;
+    flex-flow:row-reverse;
+    align-items:center;
+    width: auto;
+}
+.cajaBtn button{
+    margin: 0px 10px;
+    padding: 2px;
+    border-radius: 5px;
+}
+.tableroCurrent{
+    margin: auto;
+    width: 60%;
+    height: auto;
+    border-radius: 5px;
+    border-color: #19456B;
+    border: solid;
+}

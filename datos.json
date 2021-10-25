@@ -1,0 +1,80 @@
+
+[
+    {
+        "user":medico,
+        "name":Roxana,
+        "lastName":Alvarez,
+        "MR":123456,
+        "especialidad":Clinica
+    },
+    {
+        "user":medico,
+        "name":Juan,
+        "lastName":Gomez,
+        "MR":123456,
+        "especialidad":Clinica
+    },
+    {
+        "user":medico,
+        "name":Marcos,
+        "lastName":Ruiz,
+        "MR":123456,
+        "especialidad":Dermatologia
+    },
+    {
+        "user":enfermero,
+        "name":Roxana,
+        "lastName":Alvarez,
+        "MR":74156,
+        "especialidad":Enfermeria
+    },
+    {
+        "user":enfermero,
+        "name":Maria,
+        "lastName":Torres,
+        "MR":123456,
+        "especialidad":Enfermeria
+    },
+    {
+        "user":paciente,
+        "name":Roxana,
+        "lastName":Alvarez,
+        "DNI":28123456,
+        
+    },
+    {
+        "user":medico,
+        "name":Roxana,
+        "lastName":Alvarez,
+        "DNI":34123456,
+        
+    },
+    {
+        "nro":C12,
+        "dniPte":35334525,
+        "fecha":-,
+        "fechaImp":-,
+       
+    },
+    {
+        "nro":D15,
+        "dniPte":17456123,
+        "fecha":-,
+        "fechaImp":-,
+       
+    },
+    {
+        "nro":C13,
+        "dniPte":41456789,
+        "fecha":-,
+        "fechaImp":-,
+       
+    }
+    
+
+
+
+
+]
+
+

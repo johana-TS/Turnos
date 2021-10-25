@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/abe8a3afe3.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="css/estilo.css">
+
+
+
+    <title>Totem Turnos</title>
+</head>
+<body>
+    
+<main class="mainContainer">
+    <div class="divContainer" >
+        <button type="button" class="w-100 btn btn-lg btn-primary " style="background-color:  #19456B;"id="STurno" disabled onclick="solicitar()">Solicitar Turno</button>
+        <button type="button" class="w-100 btn btn-lg btn-primary " style="background-color:  #19456B;"id="ATurno" disabled onclick="asistir()">Asistir a  Turno</button>    
+        <button type="button" class="w-100 btn btn-lg btn-primary " style="background-color:  #19456B;"id="GTurno" disabled onclick="guardia()">Guardia Medica</button>    
+        <div class="col-sm-6" id="solicitarDNI"  > 
+            <label for="dniST" class="" style="margin: 15px;">DNI</label>
+            <input type="text"  id="dniST" placeholder="" value="" required> 
+            <button type="button" class="w-100 btn btn-lg btn-primary btnConfirm"  id="btnConfirm" onclick="habilitar()" >Confirmar</button> 
+            <div class="invalid-feedback">
+                Valid DNI is required.
+            </div>
+        </div>
+    </div>
+
+
+
+    <section class="solicitar" id="solicitar"  >
+      <!-- aca irira el div del dni -->
+   
+        <div class="solicitarDetalle" >
+        
+        <div class="especialidades">
+        <div class="table-responsive">
+        <table class="table text-center">
+        <thead>
+        <tr> <th style="width: 34%;">Especialidad</th> </tr>
+        </thead>
+        <tbody>
+        <tr> <th class="text-start">Cardiologia</th> </tr>
+        <tr> <th class="text-start">Cirugia quirurgica</th> </tr>
+        <tr> <th class="text-start">Clinica</th> </tr>
+        <tr> <th class="text-start">Ecocardiograma</th> </tr>
+        <tr> <th class="text-start">Gastroenterologia</th> </tr>
+        <tr> <th class="text-start">Kinesiologia</th> </tr>
+        <tr> <th class="text-start">Laboratorio</th> </tr>
+        <tr> <th class="text-start">Neumonologia</th> </tr>
+        <tr> <th class="text-start">Neurologia</th> </tr>
+        <tr> <th class="text-start">Nutricion</th> </tr>
+        <tr> <th class="text-start">Odontologia</th> </tr>
+        <tr> <th class="text-start">Oftalmologia</th> </tr>
+        <tr> <th class="text-start">Pediatria</th> </tr>
+        <tr> <th class="text-start">Psicologia</th> </tr>
+        <tr> <th class="text-start">Rayos</th> </tr>
+        <tr> <th class="text-start">Traumatologia</th> </tr>
+        <tr> <th class="text-start">Urologia</th> </tr>                   
+        </tbody>
+        </table>
+        </div>
+        
+        </div>
+        <div class="medicosNames">
+        <div class="table-responsive">
+        <table class="table text-center">
+        <thead>
+        <tr> <th style="width: 34%;">Profecional</th> </tr>
+        </thead>
+        <tbody>
+        <tr> <th class="text-start">Dr. Ramirez Alberto</th> </tr>
+        <tr> <th class="text-start">Dr. Ramirez Julia</th> </tr>
+        <tr> <th class="text-start">Dr. Lopez Juan</th> </tr>                                       
+        </tbody>
+        </table>
+        </div>
+        
+        </div>
+        <div class="os">
+        <div class="table-responsive">
+        <table class="table text-center">
+        <thead>
+        <tr> <th style="width: 34%;">Obra Social</th> </tr>
+        </thead>
+        <tbody>
+        <tr> <th class="text-start">IOSFA</th> </tr>
+        <tr> <th class="text-start">OSEF</th> </tr>
+        <tr> <th class="text-start">DISA</th> </tr>    
+        <tr> <th class="text-start">DIBA</th> </tr> 
+        <tr> <th class="text-start">PN</th> </tr>          
+        <tr> <th class="text-start">IOSE</th> </tr>                         
+        </tbody>
+        </table>
+        </div>
+        
+        </div>
+        <div class="calendarioDisponibles">
+        <h3>listado/calendario</h3>
+        <p> Div o Frame con un listado de opciones: turnos disponibles dias y horarios o bien calendario</p>
+        </div>
+
+        <div class="iconos">
+        <i class="fas fa-times-circle imgConfirm"></i>
+        <i class="fas fa-check-circle imgConfirm"></i> 
+        </div>
+        </div>
+                   
+    </section>
+
+    <section class="asistir" id="asistencia">
+    </div>
+    <div class="calendarioDisponibles">
+    <h3>Turno</h3>
+    <p >descripcion  </br>
+        }</p>
+    </div>
+
+    <div class="iconos">
+    
+    <i class="fas fa-check-circle imgConfirm"></i> 
+    </div>
+    </div>
+    </section>
+
+    <section class="asistir" id="guardia" >
+    </div>
+    <div class="calendarioDisponibles">
+    <h3>Turno</h3>
+    <p> Detalle del turno</p>
+    </div>
+
+    <div class="iconos">
+    
+    <i class="fas fa-check-circle imgConfirm"></i> 
+    </div>
+    </div>
+    </section>
+
+</main>
+
+ <script >
+     function habilitar(){
+    // const s_t= document.getElementById('solicitarDNI');
+    document.getElementById("STurno").disabled=false; 
+    document.getElementById("ATurno").disabled=false;
+    document.getElementById("GTurno").disabled=false;
+    
+
+   
+    }
+    function solicitar (){
+        document.getElementById("solicitar").style.display='block';
+    }
+    function guardia (){
+        document.getElementById("guardia").style.display='block';
+    }
+    function asistir (){
+        document.getElementById("asistencia").style.display='block';
+    }
+
+    </script>
+
+ <script src="js/action.js"></script> 
+ <script src="js/turnos.js"></script>  
+
+</body>
+</html>

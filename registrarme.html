@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/estilo.css">
+    <script src="https://kit.fontawesome.com/abe8a3afe3.js" crossorigin="anonymous"></script>
+
+
+    
+    <title>Registrarme</title>
+
+</head>
+<body>
+
+    <header>
+        <div id="contenedorNav">
+            <ul id="nuevoContenedor"></ul>
+        </div>
+        <div class="subtitulo">
+            <!-- <h3 >Un estilo de vida saludable engloba una alimentación sana, ejercicio físico, bienestar emocional y actividad social... </h3> -->
+        </div>
+    </header>
+    
+    <form class="formulariolog" method="" action="">
+        <h1>Registrate</h1>
+
+        <div class="cajaregistro">
+            <div class="registrosubcaja">
+                <i class="fas fa-user-check" style="margin-left: 5px"></i>
+                <input type="text" placeholder="Nombre Completo">
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-restroom icon"></i>
+                <div class="registrogenero">
+                    <input type="radio" id="male" name="genero" value="male">
+                    <label for="male">Masculino</label><br>
+                    <input type="radio" id="female" name="genero" value="female">
+                    <label for="female">Femenino</label><br>
+                    <input type="radio" id="other" name="genero" value="other">
+                    <label for="other">Otro</label>
+                </div>
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-envelope" style="margin-left: 5px;"></i>
+                <input type="text" placeholder="e-mail">
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-user-plus icon"></i>
+                <div class="registrogenero">
+                    <input type="radio" id="nurse" name="typeUser" value="nuerse">
+                    <label for="male">Enfermeria</label><br>
+                    <input type="radio" id="doc" name="typeUser" value="doc">
+                    <label for="female">Medico/a</label><br>
+                    <input type="radio" id="paciente" name="typeUser" value="paciente">
+                    <label for="other">Paciente</label>
+                </div>
+            </div>
+            <div class="registrosubcaja">
+                <i class="far fa-calendar-alt" style="margin-right: 10px;"></i>
+                <label style="font-size: 15px;margin-right: 10px;">Fecha de Nacimiento<input type="date" ></label>
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-globe-americas" style="margin-left: 5px;"></i>
+                <input type="text" placeholder="Pais">
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-city" style="margin-left: 5px;"></i>
+                <input type="text" placeholder="Ciudad">
+            </div>
+            <div class="registrosubcaja">
+                <i class="fas fa-unlock-alt" style="margin-left: 5px;"></i>
+                <input type="password" placeholder="ingrese pasword">
+            </div>
+            <input type="submit" value="Registrarme" name="btn1" id="btn1" class="btn1">
+            <div class="parrafo">
+                <p>Al registrarte, acetpas nuestras Condiciones de Uso y Politica de Privacidad</p>
+                <p>Ya tienes una cuenta? <a href="login.html" class="inise">Iniciar Secion</a> </p>
+            </div>
+        </div>
+    </form>
+
+<script src="js/action.js"></script>
+</body>
+</html>
